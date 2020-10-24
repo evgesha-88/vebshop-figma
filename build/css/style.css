@@ -10,6 +10,65 @@ header {
   background-color: #F9F6F1;
   padding: 56px 0 70px 0; }
 
+.header-gallery {
+  display: flex;
+  justify-content: space-between; }
+
+.header-gallery-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 35px; }
+
+.header-gallery-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding-bottom: 55px; }
+
+.header-gallery-button {
+  width: 240px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D7B399; }
+  .header-gallery-button .header-gallery-button-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF; }
+
+.header-gallery-picture-block {
+  background-image: url("../img/running_shoes.png");
+  width: 556px;
+  height: 377px;
+  position: relative; }
+
+.header-gallery-picture-price2 {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #D84033;
+  right: 50px; }
+
 .container {
   max-width: 1110px;
   margin: 0 auto; }
@@ -37,6 +96,32 @@ header {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF; }
+
+.collection {
+  background-color: #E5E5E5;
+  padding: 0 0 150px 0; }
+
+.collection-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 150px; }
+
+.collection-gallery-item {
+  background-image: url("../img/T-shirt-beige.png");
+  width: 277px;
+  height: 236px;
+  position: relative; }
+
+.collection-gallery-item-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  position: absolute; }
 
 .sales {
   background-color: #212121;
@@ -109,12 +194,14 @@ input {
   padding-bottom: 103px; }
 
 .new-item-gallery-group {
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .new-item-gallery-group-picture {
   width: 205px;
   height: 211px;
-  background-image: url("./img/new-item-picture.png");
+  background-image: url("../img/new-item-picture.png");
+  background-repeat: no-repeat;
   padding-bottom: 25px; }
 
 .new-item-gallery-group-name {
@@ -135,6 +222,23 @@ input {
   line-height: 22px;
   text-align: center;
   color: #D7B399; }
+
+.right-angle {
+  position: absolute;
+  width: 25px;
+  border-left: 20px;
+  border-top: 20px;
+  border: 3px solid #D7B399;
+  left: 0;
+  top: 0; }
+
+.left-angle {
+  position: absolute;
+  width: 25px;
+  border: 3px solid #D7B399;
+  transform: rotate(90deg);
+  left: 0;
+  top: 0; }
 
 .new-item-button {
   background-color: #D7B399;
@@ -171,7 +275,9 @@ footer {
   padding-bottom: 39px; }
 
 .footer-loop-icon {
-  background-image: url("./img/frame.svg"); }
+  background-image: url("../img/frame.svg");
+  width: 40px;
+  height: 40px; }
 
 .footer-loop-icon-text {
   font-family: Montserrat;
@@ -209,6 +315,7 @@ footer {
   padding-bottom: 20px; }
 
 .footer-link-list-item {
+  display: flex;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -219,3 +326,38 @@ footer {
 
 .footer-link-list-item:last-child {
   padding-bottom: 0; }
+
+.footer-link-item-vk {
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px; }
+
+.footer-link-item-facebook {
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 3px; }
+
+.footer-link-item-instagram {
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px; }
+
+.footer {
+  background-color: #E5E5E5;
+  padding: 30px 0 23px 0; }
+
+.footer-footer-layout {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212121; }
