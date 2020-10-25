@@ -16,6 +16,7 @@ header {
 .header-gallery {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 130px;
 }
 
 .header-gallery-text {
@@ -66,7 +67,23 @@ header {
     position: relative;
 }
 
-.header-gallery-picture-price2 {
+.header-gallery-picture-price-before {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #000000;
+    position: absolute;
+    right: 7px;
+    bottom:308px
+}
+
+.header-gallery-picture-price-after {
     position: absolute;
     font-family: Montserrat;
     font-style: normal;
@@ -77,7 +94,26 @@ header {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #D84033;
-    right: 50px;    
+    right: 0px;
+    bottom:243px;
+        
+}
+
+.header-lines {
+    display: flex;
+    width: 205px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header-lines-item {
+    width: 40px;
+    height: 7px;
+    background-color: #CECECE;    
+}
+
+.header-lines-item:hover {
+    background-color: #D7B399;
 }
 
 .container {
@@ -117,21 +153,70 @@ header {
     padding: 0 0 150px 0;
 }
 
+.men-collection {
+    width: 50%;
+    background-color: #F9F6F1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collection-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-bottom: 25px;
+}
+
+.collection-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.collection-button {
+    width: 80px;
+    height: 30px;
+    background-color:#D7B399;
+    color:#ffffff;
+}    
+
+.women-collection {
+    width: 50%;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .collection-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;    
     padding-bottom: 150px;
 }
 
 .collection-gallery-item {
-    background-image: url("../img/T-shirt-beige.png");
+    /*background-image: url("../img/T-shirt-beige.png");*/
     width: 277px;
     height: 236px;
     position: relative;
 }
 
-.collection-gallery-item-text {
+.collection-gallery-item:nth-child(odd) {
+    background-image: url("../img/T-shirt-beige.png");
+}
+
+.collection-gallery-item:nth-child(even) {
+    background-image: url("../img/T-shirt-grey.png");
+}
+
+.collection-gallery-text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -140,6 +225,8 @@ header {
     letter-spacing: 0.03em;
     color: #000000;
     position: absolute;
+    bottom: 24px;
+    left: 30px;
 }
 
 .sales {
