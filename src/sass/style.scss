@@ -10,7 +10,103 @@ header, section, footer {
 
 header {
     background-color: #F9F6F1;
-    padding: 56px 0 70px 0; 
+    padding: 50px 0 70px 0; 
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 130px;
+}
+
+.position-block {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-right: 91px;
+    padding-top: 11px;
+}
+
+.for-men, .for-women, .for-child {
+    display: flex;
+}
+
+.for-text {
+    padding-right: 5px;
+}
+
+.for-text, .payment-item, .delivery-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.for-symbol {
+    background-image: url("../img/Polygon.svg");
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 5px;
+    margin-top: 5px;
+}
+
+.logo-block {
+    display: flex;
+    padding-right: 90px; 
+    padding-top: 6px;   
+}
+
+.logo-block-icon {
+    background-image: url("../img/Frame.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.logo-block-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #212121;
+    padding-top: 6px;
+}
+
+.payment-delivery {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding-right: 101px;
+    padding-top: 11px;
+}
+
+.symbol-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.basket-symbol {
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat; 
+    width: 30px;
+    height: 26.28px; 
+    margin-top: 6px; 
+}
+
+.pointer-symbol {
+    margin-top: 14px;
+    background-image: url("../img/pointer.svg");
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 17px;
 }
 
 .header-gallery {
@@ -153,11 +249,16 @@ header {
     padding: 0 0 150px 0;
 }
 
+.men-women-collection {
+    display: flex;    
+}
+
 .men-collection {
     width: 50%;
     background-color: #F9F6F1;
     display: flex;
     justify-content: flex-end;
+    padding-top: 60px;
 }
 
 .collection-title {
@@ -186,13 +287,31 @@ header {
     height: 30px;
     background-color:#D7B399;
     color:#ffffff;
-}    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.men-collection-picture {
+    width: 190px;
+    height: 171px;
+    background-image: url("../img/men_collection.png");
+    background-repeat: no-repeat;
+}
 
 .women-collection {
+    padding-top: 60px;
     width: 50%;
     background-color: #F4F4F4;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
+}
+
+.women-collection-picture {
+    width: 190px;
+    height: 171px;
+    background-image: url("../img/women_collection.png");
+    background-repeat: no-repeat;
 }
 
 .collection-gallery {
@@ -203,7 +322,7 @@ header {
 
 .collection-gallery-item {
     /*background-image: url("../img/T-shirt-beige.png");*/
-    width: 277px;
+    width: 270px;
     height: 236px;
     position: relative;
 }
